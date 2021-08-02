@@ -1,0 +1,223 @@
+
+/* STYLE GUIDE */
+
+body {
+    font-family: Open Sans;
+    background-color: #FCFCF7;
+}
+
+p {
+    font-size: 18px;
+}
+
+h1 {
+    font-family:'Playfair Display', serif;
+    font-size: 75px;
+    font-style: Bold;
+    color: #EC5528;
+}
+
+h3 {
+    font-family: Playfair Display;
+    font-size: 36px;
+}
+
+/* HOME PAGE */
+
+/* Navigation style */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 40px;
+}
+
+.navTabs {
+    display: inline-block;
+    list-style-type: none;
+    font-size: 20px;
+    margin: 40px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    margin: 40px;
+}
+
+li {
+    display: inline-block;
+    padding: 40px;
+}
+
+/* Home Intro Style */
+
+.Intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.HomeAbout {
+    padding: 50px;
+    width: 800px;
+}
+
+.socialLink {
+    text-decoration: none;
+    background-color: #373737;
+    color: white;
+    border-radius: 8%; 
+    padding: 10px;
+ }
+ 
+
+/* My Work Style*/
+
+.myWork {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+.HappyHippie {
+    grid-area: TopLeft;
+}
+
+.Government {
+    grid-area: TopRight;
+}
+
+.PupPal {
+    grid-area: BottomLeft;
+}
+
+.HappyGrocer {
+    grid-area: BottomRight;
+}
+
+.caseStudies {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "TopLeft TopRight BottomLeft BottomRight";
+    align-items: center;
+    justify-content: center;
+}
+
+#card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+    background-color: lightgray;
+    border-radius: 5%;
+    padding: 20px;
+}
+
+/* Footer Style */
+
+.Footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footTabs {
+    margin: 40px;
+    font-size: 20px;
+}
+
+/* ABOUT PAGE */
+
+.AboutMe {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProfilePic {
+    border-radius: 4%;
+    width: 350px;
+    height: 400px;
+    float: left;
+    margin: 20px;
+}
+
+.aboutSummary {
+    padding: 50px;
+    width: 900px;
+    margin: 10px;
+}
+
+.skillName {
+   margin: 60px;
+   width: 400px;
+}
+
+#mySkills {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* RESPONSIVE DESIGN CODES */
+
+
+@media only screen and (max-width: 1500px) {
+
+    /* home page */
+
+    .caseStudies {
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "TopLeft TopRight"
+    "BottomLeft BottomRight";
+    align-items: center;
+    justify-content: center;
+}}
+
+@media only screen and (max-width: 800px) {
+
+    /* about page */
+    
+    #mySkills {
+        display: block;
+        margin: 100px;
+        padding: 40px;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    /* home page */
+    .caseStudies {
+        display: block;
+}
+
+    /* about page */
+
+    #mySkills {
+        display: block;
+    }
+
+
+}
+
+
+
