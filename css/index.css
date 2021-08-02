@@ -19,7 +19,7 @@ h1 {
 
 h3 {
     font-family: Playfair Display;
-    font-size: 36px;
+    font-size: 30px;
 }
 
 /* HOME PAGE */
@@ -41,6 +41,13 @@ nav {
     list-style-type: none;
     font-size: 20px;
     margin: 40px;
+}
+
+
+.navHover:hover {
+    color: #EC5528;
+    scale: 5,6;
+    font-weight: 200;
 }
 
 a{
@@ -86,18 +93,22 @@ li {
 
 .HappyHippie {
     grid-area: TopLeft;
+    background-color: peachpuff;
 }
 
 .Government {
     grid-area: TopRight;
+    background-color: #8CAA81;
 }
 
 .PupPal {
     grid-area: BottomLeft;
+    background-color: green;
 }
 
 .HappyGrocer {
     grid-area: BottomRight;
+    background-color: orange;
 }
 
 .caseStudies {
@@ -110,16 +121,21 @@ li {
 }
 
 #card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: block;
     height: 300px;
     width: 300px;
     margin: 20px;
-    background-color: lightgray;
     border-radius: 5%;
-    padding: 20px;
+    padding: 30px;
+}
+
+.viewCase {
+    display: inline-block;
+    border-radius: 5%;
+    background-color: #F5B469;
+    padding: 10px;
+    border-style: none;
+    justify-content: center;
 }
 
 /* Footer Style */
