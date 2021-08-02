@@ -3,7 +3,7 @@
 
 body {
     font-family: Open Sans;
-    background-color: #FCFCF7;
+    background-color: #FFFFFC;
 }
 
 p {
@@ -73,27 +73,20 @@ li {
     padding: 50px;
     width: 800px;
 }
-
-.socialLink {
-    text-decoration: none;
-    background-color: #373737;
-    color: white;
-    border-radius: 8%; 
-    padding: 10px;
- }
  
 
 /* My Work Style*/
 
 .myWork {
-        display:flex;
+        display: flex;
         align-items: center;
         justify-content: center;
     }
 
 .HappyHippie {
     grid-area: TopLeft;
-    background-color: peachpuff;
+    background-color: #C452EC;
+ 
 }
 
 .Government {
@@ -103,39 +96,50 @@ li {
 
 .PupPal {
     grid-area: BottomLeft;
-    background-color: green;
+    background-color: #4E60FB;
 }
 
 .HappyGrocer {
     grid-area: BottomRight;
-    background-color: orange;
+    background-color: #EC8952;
 }
 
 .caseStudies {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "TopLeft TopRight BottomLeft BottomRight";
-    align-items: center;
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
 }
 
 #card{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 300px;
     width: 300px;
     margin: 20px;
     border-radius: 5%;
-    padding: 30px;
+    padding: 20px;
+}
+
+#card:hover {
+    box-shadow: -3px 10px 10px #595959;
+}
+
+.viewCase:hover {
+    opacity: 0.5;
 }
 
 .viewCase {
-    display: inline-block;
+    display: inline;
     border-radius: 5%;
-    background-color: #F5B469;
+    background: none;
+    color: black;
     padding: 10px;
-    border-style: none;
+    border-style: solid;
+    border-width: 2;
+    border-color: black;
     justify-content: center;
+    align-items: center;
 }
 
 /* Footer Style */
