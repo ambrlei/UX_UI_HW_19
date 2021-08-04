@@ -125,22 +125,60 @@ li {
     box-shadow: -3px 10px 10px #595959;
 }
 
-.viewCase:hover {
-    opacity: 0.5;
-}
+/* View Case Button Animation */
 
-.viewCase {
+.viewCase,
+  .viewCase::after {
+    -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+
+  .viewCase {
     display: inline;
-    border-radius: 5%;
+    border-radius: 4%;
     background: none;
-    color: black;
+    color: #EC5528;
     padding: 10px;
     border-style: solid;
     border-width: 2;
-    border-color: black;
+    border-color: #EC5528;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
+
+
+.viewCase::before,
+.viewCase::after {
+  background: #EC5528;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+.viewCase:hover {
+    background-color: #EC5528;
+    color: white;
+}
+
+
+.viewCase::after {
+    height: 0;
+    left: 50%;
+    top: 50%;
+    width: 0;
+  }
+  
+  .viewCase:hover:after {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+
 
 /* Footer Style */
 
