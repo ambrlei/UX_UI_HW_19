@@ -34,6 +34,8 @@ nav {
 
 .logo {
     margin: 40px;
+    height: 30px;
+    width: 80px;
 }
 
 .navTabs {
@@ -69,9 +71,11 @@ li {
     justify-content: center;
 }
 
+
 .HomeAbout {
     padding: 50px;
     width: 800px;
+    margin: auto;
 }
  
 
