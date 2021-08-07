@@ -3,7 +3,7 @@
 
 body {
     font-family: Open Sans;
-    background-color: #FFFFFC;
+    background-color: #FFF6E9;
 }
 
 p {
@@ -89,23 +89,23 @@ li {
 
 .HappyHippie {
     grid-area: TopLeft;
-    background-color: #C452EC;
+    background-color: white;
  
 }
 
 .Government {
     grid-area: TopRight;
-    background-color: #8CAA81;
+    background-color: white;
 }
 
 .PupPal {
     grid-area: BottomLeft;
-    background-color: #4E60FB;
+    background-color: white;
 }
 
 .HappyGrocer {
     grid-area: BottomRight;
-    background-color: #EC8952;
+    background-color: white;
 }
 
 .caseStudies {
