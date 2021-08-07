@@ -9,7 +9,7 @@
 
     <link href="css/index.css" rel="stylesheet">
 
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+ 
 
 <!-- NAVIGATION BAR -->
 
@@ -17,7 +17,9 @@
 
     <img class="logo" src="images/am_3.png">
 
-    <img class="mobileNavbar" src="images/Hamburger menu.png">
+    <button class="hamburger">
+        <img class="mobileNavbar" src="images/Hamburger menu.png">
+        </button>
 
     <ul class="navTabs">
         <li class="navHover"> Home </li>
@@ -26,21 +28,15 @@
     </ul>
 
 <!-- Navbar on small screen with a hamburger active menu -->
-<div class="w3-top">
-    <div class="w3-bar w3-black w3-card">
-      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-      <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-      <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
-      <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>
-      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-      <div class="w3-dropdown-hover w3-hide-small">
-        <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>
-        <div class="w3-dropdown-content w3-bar-block w3-card-4">
-          <a href="#" class="w3-bar-item w3-button">Merchandise</a>
-          <a href="#" class="w3-bar-item w3-button">Extras</a>
-          <a href="#" class="w3-bar-item w3-button">Media</a>
-        </div>
-      </div>
+
+<div class="hamburgerOpen">
+    <ul>
+    <li class="navHover"> Home </li>
+    <a class="navHover" href="about.html"> About </a>
+    <a class="navHover" href="https://docs.google.com/document/d/13ta4lYHi-lhiO0MQ-rWw7aqho-nahZNK2zrC8sLoSUs/edit?usp=sharing"> Resume </a>
+    </ul>
+</div>
+
 
 </nav>
 
@@ -58,7 +54,6 @@
     <p> A solution-oriented designer passionate about developing a clear and empathetic user interface to bridge the gap between clients, developers, and end-users. I am intrigued with people's motivations, past experiences, and current circumstances which drive and inspire my human-centered designs.
      </p>
     
-     <span class="iconify" data-inline="false" data-icon="jam:linkedin-circle" style="font-size: 44px;"></span>
     
     </div>
 
@@ -121,12 +116,5 @@
 
 
 
-
-<script src="js/index.js"></script>
-
-
-
-
-
-
+<script type="text/javascript" src="../UX_UI_HW_19/js/index.js"></script>
 </html>

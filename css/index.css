@@ -3,7 +3,7 @@
 
 body {
     font-family: Open Sans;
-    background-color: #FFF6E9;
+    background-color: #FFFFFC;
 }
 
 p {
@@ -34,13 +34,14 @@ nav {
 
 /* mobile nav bar codes */
 
-.mobileNavbar {
+.hamburger {
     display: none;
 }
 
-.w3-top {
+.hamburgerOpen {
     display: none;
 }
+
 
 /* end of mobile nav bar codes */
 
@@ -279,9 +280,11 @@ li {
         display: none;
     }
 
-    .mobileNavbar {
+    .hamburger {
         display: inline-block;
         padding: 10px;
+        border: none;
+        background: none;
     }
 }
 
@@ -304,10 +307,27 @@ li {
         display: none;
     }
 
-    .mobileNavbar {
+    .hamburger {
         display: inline-block;
         padding: 10px;
+        border: none;
+        background: none;
     }
+
+    .hamburgerOpen {
+        z-index:1000000;
+        font-weight: bold;
+        width: 50%;
+        background: #EC5528;
+    }
+
+    .hamburgerOpen ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+
   
 
 }
