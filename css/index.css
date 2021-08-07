@@ -32,9 +32,17 @@ nav {
     justify-content: space-between;
 }
 
+/* mobile nav bar codes */
+
 .mobileNavbar {
     display: none;
 }
+
+.w3-top {
+    display: none;
+}
+
+/* end of mobile nav bar codes */
 
 
 .logo {
