@@ -1,10 +1,15 @@
 console.log("Your index.js file is loaded correctly!");
 
 
+if (matchMedia('only screen and (max-width: 800px)').matches){
 
-$(".hamburgerOpen").hide();
+    $(".navHover").hide();
 
 
-$(".hamburger").click(function() {
-    $(".hamburgerOpen").slideToggle("slow");
-});
+    $(".hamburger").click(function() {
+        $(".navHover").slideToggle("slow");
+    });
+
+}
+
+

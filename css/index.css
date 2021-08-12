@@ -3,7 +3,7 @@
 
 body {
     font-family: Open Sans;
-    background-color: #FFFFFC;
+    background-color: white;
 }
 
 p {
@@ -32,15 +32,14 @@ nav {
     justify-content: space-between;
 }
 
+
 /* mobile nav bar codes */
 
 .hamburger {
     display: none;
 }
 
-.hamburgerOpen {
-    display: none;
-}
+
 
 
 /* end of mobile nav bar codes */
@@ -53,17 +52,21 @@ nav {
 }
 
 .navTabs {
-    display: inline-block;
+    display: flex;
     list-style-type: none;
     font-size: 20px;
     margin: 40px;
+}
+
+.activePage {
+    color: #EC5528;
 }
 
 
 .navHover:hover {
     color: #EC5528;
     scale: 5,6;
-    font-weight: 200;
+    font-weight: 700;
 }
 
 a{
@@ -269,6 +272,7 @@ li {
 @media only screen and (max-width: 800px) {
 
     /* about page */
+
     
     #mySkills {
         display: block;
@@ -276,17 +280,18 @@ li {
         padding: 40px;
     }
 
-    .navTabs {
-        display: none;
-    }
+
+
 
     .hamburger {
-        display: inline-block;
-        padding: 10px;
+        display: block;
+        float: right;
         border: none;
         background: none;
     }
 }
+
+
 
 
 
@@ -303,7 +308,7 @@ li {
         display: block;
     }
 
-    .navTabs {
+    .navHover {
         display: none;
     }
 
@@ -312,11 +317,11 @@ li {
         border: none;
         background: none;
         z-index:10000000000000;
+        height: 30px;
+        width: 30px;
     }
 
-    .hamburgerMenu {
-        position: fixed;
-    }
+ 
 
     .hamburgerOpen {
         display: flex;
